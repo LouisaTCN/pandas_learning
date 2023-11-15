@@ -22,8 +22,7 @@ print(cereals_more_than_4g_protein)
 
 # - Bring back all data relating to Bran Flakes
 # To find out which row Bran Flakes is on
-*! ##index_of_bran_flakes = df.index.get_loc("Bran Flakes")
-*! ##print(index_of_bran_flakes)
-print(df.values["Bran Flakes"])
-
-print(df.loc[4:7, "Ranking 2020"]) # just gives info from rows 4 to 7 of Ranking 2020
+bran_flakes_data=df.loc[df["name"] == 'Bran Flakes']
+#This is creating new data frame where it's pulling in the info relating to Bran Flakes
+#== is telling it to only add in data frame if name is Bran Flakes 
+print(bran_flakes_data)

@@ -7,6 +7,8 @@ print(languages)
 ranking = pd.Series([3, 1, 2, 4])
 print(ranking)
 
+#DF is data frame
+
 # df = pd.DataFrame([("Anne", 30), ("Bill", 27), ("Charlie", 55)])
 # print(df)
 # # The above creates a data frame. The list had 3 Tuples within in. It creates a column table

@@ -1,0 +1,46 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* '*'is a wildcard and applys to all text - only use '*' if you know you want same on all page */
+
+body{
+    background-color: beige;
+}
+
+p{
+    font-size: 20px;
+    color:blue
+}
+/* This changes all the paragraphs */
+
+h1{
+    color: aqua;
+    text-decoration: underline;
+}
+
+h2,h4{
+    color: peru;
+    text-decoration: underline;
+}
+/* This allows you to group e.g. headings to change colour */
+
+#navbar{
+    background-color: blueviolet;
+    height: 50px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.pink-text{
+    color: pink;
+}
+
+a:hover{
+    color:white;
+}
+/* this makes a link white if you hover over it */
+
+img{
+    width: 50%;
+ }

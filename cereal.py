@@ -21,7 +21,7 @@ cereals_more_than_4g_protein=df[df['protein'] >4]
 print(cereals_more_than_4g_protein)
 
 # - Bring back all data relating to Bran Flakes
-# To find out which row Bran Flakes is on
+# To find out which row Bran Flakes is on **!couldn't work out how to do this!**
 bran_flakes_data=df.loc[df["name"] == 'Bran Flakes']
 #This is creating new data frame where it's pulling in the info relating to Bran Flakes
 #== is telling it to only add in data frame if name is Bran Flakes 

@@ -133,3 +133,38 @@ print(df[df.select_dtypes(include="int") >4])
 #When we do a comparison, the cells are evaluated to True or False (False is not a number!)
 #True allows us to see the matching results, False would show as False = NaN for this
 
+
+#____________________________________________________________________
+#                Small Data Cleaning
+#___________________________________________________________________
+
+df.rename(columns={"Ranking": "Ranking 2023"}, inplace=True)
+print(df)
+#this changes the column name of Ranking to Ranking 2023 as it was missing  
+
+df.set_index("Languages", inplace=True)
+print(df)
+print(df["Ranking 2019"])
+#This just pulls info from the column 'Ranking 2019'
+
+print(df.mean(axis=1))
+# this prints the mean of all the columns (e.g. years in this instance)
+
+print(df.mode(axis=1))
+# this prints the mode of all the columns (e.g years in this instance)
+
+print(df.median(axis=1))
+
+print(df.min())
+print(df.max())
+
+print(df.sum())
+# adds up everything
+print(df.sum(axis=1))
+#this would sum up everything in columns
+
+print(df.sort_values(by=["Ranking 2022"]))
+# Sorts by order of colunn Ranking 2022
+
+print(df.sort_values(by=["Ranking 2022"], ascending=False))
+# this sort the data by ascending order

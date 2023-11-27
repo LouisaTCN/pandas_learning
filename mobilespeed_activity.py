@@ -25,10 +25,10 @@ mean_row = pd.DataFrame({
 })
 
 mode_row = pd.DataFrame({
-    "download_mode_speed" : [df['download_speed'].mode()],
-    "upload_mode_speed" : [df['upload_speed'].mode()],
-    "idle_mode_latency" : [df['idle_latency'].mode()]
-})
+    "download_mode_speed" : [df['download_speed'].mode().loc[0]],
+    "upload_mode_speed" : [df['upload_speed'].mode().loc[0]],
+    "idle_mode_latency" : [df['idle_latency'].mode().loc[0]]
+}) #(adding .loc[0] picks out just the first row of the mode frame! - Otherwise, Because there was no one mode, it's putting everything down as your mode, and filling up the cells!)
 
 median_row = pd.DataFrame({
     "download_median_speed" : [df['download_speed'].median()],

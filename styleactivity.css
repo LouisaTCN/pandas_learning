@@ -8,9 +8,9 @@ body{
     background-color: beige;
 }
 
-p{
+p {
     font-size: 20px;
-    color:black
+    color: black;
 }
 /* This changes all the paragraphs */
 
@@ -19,7 +19,7 @@ h1{
     text-decoration: underline;
 }
 
-h2,h4{
+h2, h4{
     color: black;
     text-decoration: underline;
 }
@@ -42,8 +42,6 @@ a:hover{
 /* this makes a link white if you hover over it */
 
 
-
-
  .first{
     color: gold;
     font-weight: 500;
@@ -57,4 +55,30 @@ a:hover{
 .third{
     color: brown;
     font-weight: 500;
+}
+
+.columns{
+    display: flex;
+    flex-direction: column;
+}
+
+.rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content{
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 8px black;
+    width:75%;
+    margin: 0 auto;
+}
+
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
